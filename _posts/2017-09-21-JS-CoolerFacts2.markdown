@@ -50,7 +50,7 @@ delete fakervar; // => true：变量被删除
 #### 5.运算符优先级
 
 标题为 A 的列表式运算符的结合性，L（从左至右）或 R（从右至左），标题为 N 的列表式操作数的个数。
-![Chart](../../assets/images/Operation chart.png)
+![avatar](../../assets/images/Operation chart.png)
 
 #### 6.运算顺序
 
