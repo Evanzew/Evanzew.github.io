@@ -44,13 +44,13 @@ console.log(scope);
 var truevar =1;
 fakervar =2;
 delete truevar ; //=> false: 变量没有被删除
-delete fakervar; // => true：变量被删除
+delete fakervar; //=> true：变量被删除
 {% endhighlight %}
 
 #### 5.运算符优先级
 
 标题为 A 的列表式运算符的结合性，L（从左至右）或 R（从右至左），标题为 N 的列表式操作数的个数。
-![avatar](../../assets/images/Operation chart.png)
+![Chart](../assets/images/Operation chart.png)
 
 #### 6.运算顺序
 
@@ -60,7 +60,7 @@ var a =1; b=(a++)+a; 将如何计算结果？
 1）	计算b
 2）	计算a++（设为c值     //a=1
 3）	计算a               //a=2
-4）	计算c+a            	//1+2
+4）	计算c+a             //1+2
 
 ```
 
