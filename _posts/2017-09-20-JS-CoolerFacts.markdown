@@ -6,15 +6,15 @@ date: 2017-9-20 14:36:24.000000000 +09:00
 
 ### 那些你不知道的关于 JS 的冷知识
 
-#### 1.大小写
+#### 1. 大小写
 
 HTML 不区分大小写 `onclick=onClick`
 
-#### 2.命名
+#### 2. 命名
 
 变量命名必须是以字母，下划线（\_）或者美元符号（\$）命名的。
 
-#### 3.分号的应用
+#### 3. 分号的应用
 
 {% highlight ruby %}
 var a
@@ -47,7 +47,7 @@ y
 这段代码将解析为"x;++y",而不是"x++;y"
 ```
 
-#### 4.Number
+#### 4. Number
 
 `1/0 Infinity（无穷大）`
 
@@ -60,12 +60,12 @@ NaN 和任何值都不相等，包括自己：`x=NaN; x==NaN=>false; x!=x=>true`
 
 `0.4-0.3=0.10000000000000003 0.2-0.1=0.1`
 
-#### 5.String 拼接
+#### 5. String 拼接
 
 "long\ <br>
 Line"=>"longline"
 
-#### 6.String Methods
+#### 6. String Methods
 
 ```
 var s="hello, world"
@@ -80,7 +80,7 @@ s.indexOf("l",3)=>3 注释：第三个字母开始后 l 出现在字符串中的
 `null == undefined =>true`
 null 和 undefined 是它自由类的唯一一个成员, undefined 表示未定义是全局变量, null 是一个特殊的对象值 null 是关键字
 
-#### 8.包装对象
+#### 8. 包装对象
 
 ```
 var s="test";
@@ -103,7 +103,7 @@ Null==undefined
 "0 " == false
 ```
 
-#### 11.显示类型转换
+#### 11. 显示类型转换
 
 `var x= 3 ; x+"" =>"3" =>String(x)`
 
