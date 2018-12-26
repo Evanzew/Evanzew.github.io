@@ -16,7 +16,7 @@ layout: default
       </p>
       <div class="post-list__meta">
         <time
-          datetime="{{post.date | date: date_to_xmlschema}}"
+          datetime="{{ post.date | date: date_to_xmlschema }}"
           class="post-list__meta--date date"
           >{{ post.date | date: '%F' }}
         </time>

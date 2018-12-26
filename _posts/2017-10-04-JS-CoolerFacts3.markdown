@@ -60,3 +60,73 @@ a instanceof Array; //计算结果为 true，a 是一个数组
 a instanceof Object; //计算结果为 true，所有数组都是对象
 a instanceof RegExp; //计算结果为 true，数组不是正则表达式
 {% endhighlight %}
+
+#### 4. 逻辑与(&&)
+
+- 例 1：
+  {% highlight ruby %}
+  var o = { x : 1}
+  var p = null
+  o && o.x //=>1 : o 是真值，因此返回值为 o.x
+  p && p.x //=>null: p 是假值，因此将其返回，而并不去计算 p.x
+  {% endhighlight %}
+
+- 例 2：以下两行代码完全等价
+  {% highlight ruby %}
+  i. if(a==b) stop();
+  ii. (a==b) && stop();
+  {% endhighlight %}
+
+#### 5. 逻辑非(!)
+
+- 对于 p 和 q 取任何值，这两个等式都永远成立。
+  {% highlight ruby %}
+  i. !(p && q) === !p || !q
+  ii. !(p || q) === !p && !q
+  {% endhighlight %}
+
+#### 6. 全局 eval()
+
+直接调用 eval()，是在上下文作用域内执行。其他间接调用则是使用全局对象作为其上下文作用域。如下：
+{% highlight ruby %}
+var geval = eval;
+var x = 'global',
+y = 'global';
+function f() {
+var x = 'local';
+eval("x += ' changed';");
+return x;
+}
+function g() {
+var y = 'local';
+geval("y += ' changed';");
+return y;
+}
+console.log(f(), x); //=>local changed global
+console.log(g(), y); //=>local global changed
+{% endhighlight %}
+
+#### 7. Delete 运算符
+
+- 例 1：
+  {% highlight ruby %}
+  var a = [1, 2, 3];
+  delete a[2];
+  2 in a; //=>false: 元素 2 在数组中已经不存在了
+  a.length; //=>3:注意，数组长度并没有改变，尽管上一行代码删除了这个元素，但删除操作留下了一个洞，世纪上并没有修改数组的长度，因此 a 数组的长度仍然是 3。
+  a; //=> [1, 2, empty]
+
+  {% endhighlight %}
+
+- 例 2： delete 属性并不能删除通过 var 生命的变量。在严格模式下，会抛出一个语法错误（SyntaxError）异常。在非严格模式下，这些 delete 操作都不会报错，只是简单地返回 false，以表明操作数不能执行删除操作。
+  {% highlight ruby %}
+  var o = { x: 1, y: 2 };//=>定义一个变量，初始化为对象
+  delete o.x; //=>删除一个对象属性，返回 true
+  typeof o.x; //=>属性不存在，返回"undefined"
+  delete o.x; //=>删除不存在的属性，返回 true
+  delete o; //=>不能删除通过 var 声明的变量，返回 false；严格模式下，将抛出异常
+  delete 1; //=>参数不是一个左值，返回 true
+  this.x = 1; //=>给全局对象定义一个属性，这里没有使用 car
+  delete x; //=>试图删除 x，在费严格模式下返回 true；在严格模式下会抛出异常，这时使用 delete this.x 来代替
+  x; //=>运行是错误，没有定义 x
+  {% endhighlight %}
