@@ -356,7 +356,7 @@ hr {
   margin: 0 0 5px 0;
   font-size: 2.5em;
   letter-spacing: 4px;
-  color: #FFF; }
+  color: #fff; }
 
 .panel-subtitle {
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -393,7 +393,7 @@ hr {
   background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
 
 .panel-cover__logo {
-  margin-bottom: .2em; }
+  margin-bottom: 0.2em; }
 
 .panel-cover__description {
   margin: 0 30px; }
@@ -431,10 +431,10 @@ hr {
 .panel-inverted {
   font-weight: 100;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
   .panel-inverted a {
-    color: #FFF; }
+    color: #fff; }
 
 .cover-navigation {
   margin-top: 42px; }
@@ -468,9 +468,9 @@ hr {
   background-image: linear-gradient(140deg,rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8)); }
 
 .cover-slate {
-  background-color: rgba(61, 66, 96, 0.6);
-  background-image: -webkit-linear-gradient(-410deg, rgba(61, 66, 96, 0.6) 20%, rgba(21, 23, 34, 0.8));
-  background-image: linear-gradient(140deg,rgba(61, 66, 96, 0.6) 20%, rgba(21, 23, 34, 0.8)); }
+  background-color: rgba(61, 66, 96, 0.1);
+  background-image: -webkit-linear-gradient(-410deg, rgba(61, 66, 96, 0.1) 20%, rgba(21, 23, 34, 0.8));
+  background-image: linear-gradient(140deg,rgba(61, 66, 96, 0.1) 20%, rgba(21, 23, 34, 0.8)); }
 
 .cover-disabled {
   background: none; }
@@ -543,7 +543,6 @@ nav {
 
 .navigation {
   display: inline-block;
-  float: left;
   position: relative;
   margin: 0;
   list-style-type: none; }
@@ -555,12 +554,12 @@ nav {
   .navigation__item a {
     display: block;
     position: relative;
-    border-color: #FFF;
-    color: #FFF;
-    opacity: .8; }
+    border-color: #fff;
+    color: #fff;
+    opacity: 0.8; }
     .navigation__item a:hover {
-      color: #FFF;
-      border-color: #FFF;
+      color: #fff;
+      border-color: #fff;
       opacity: 1; }
 
 .navigation--social a {

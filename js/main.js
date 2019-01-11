@@ -71,3 +71,13 @@ $(document).ready(function() {
     );
   });
 });
+
+$('.panel-main').click(function(event) {
+  if (window.location.hash && window.location.hash == '#blog') {
+    // $('.panel-cover').animate({ width: '100%', 'max-width': '100%' }, 400);
+    window.location.href = window.location.href.replace('#blog', '');
+  }
+});
+$('.panel-main').on('click', '.navigation', function(e) {
+  e.stopPropagation();
+});
