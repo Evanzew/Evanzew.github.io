@@ -1,6 +1,6 @@
 # Basic
 title: Evan Zou
-subtitle: A slef blog for Evan
+subtitle: A personal blog for Evan
 welcome_message: Hi I am Evan, nice to meet you all. Welcome to my blog.
 description: Javascript follower.
 creator: <a href="https://github.com">@EVAN</a>
@@ -22,11 +22,13 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
+  - { title: 简历, description: My Prfiles, url: '/resume/' }
   - {
       title: Projects,
       description: My Projects,
       url: 'https://github.com/evanzew',
     }
+
   # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
