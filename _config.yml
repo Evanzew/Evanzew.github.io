@@ -22,7 +22,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-  - { title: 简历, description: My Prfiles, url: '/resume/' }
+  # - { title: 简历, description: My Prfiles, url: '/resume/' }
   - {
       title: Projects,
       description: My Projects,
