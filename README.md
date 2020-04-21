@@ -3,6 +3,10 @@
 ## Step to usage
 
 ```
+Note: ruby version <2.5
+
+$ gem install bundle
+$ gem install jekyll
 $ bundler install
 $ sass --watch css:css
 $ bundler exec jekyll serve
