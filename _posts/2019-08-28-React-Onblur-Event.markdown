@@ -14,20 +14,20 @@ date: 2019-08-28 16:07:24.000000000 +09:00
 
 #### 1. 初始状态
 
-![First](/assets/images/React-onBlur/First.png)
+![First](/assets/images/React-Onblur/First.png)
 
 
 #### 2. 第一步
 输入错误信息并触发输入框的onBlur事件，表单提交按钮发生向下位移，位移高度为错误信息文字高度。
 
-![Second](/assets/images/React-onBlur/Second.png)
+![Second](/assets/images/React-Onblur/Second.png)
 
 
 #### 3. 第二步
 
 随后输入正确信息，点击提交按钮，先触发了onBlur事件，错误信息消失，提交按钮向上位移，若鼠标点击在按钮位移之前的位置，会无法触发按钮的onClick事件。
 
-![Third](/assets/images/React-onBlur/Third.png)
+![Third](/assets/images/React-Onblur/Third.png)
 
 
 ### 解决方案
