@@ -17,15 +17,15 @@ cover_color: slate
 
 # The blog button should not be removed.
 blog_button:
-  title: Blog
-  description: Visit blog
+  title: Blogs
+  description: Visit blogs
 
 # Navigation buttons in the front page.
 nav:
   # - { title: 简历, description: My Prfiles, url: '/resume/' }
   - {
-      title: Projects,
-      description: My Projects,
+      title: Git,
+      description: My Github,
       url: 'https://github.com/evanzew',
     }
 
@@ -43,7 +43,7 @@ comment:
 
 # Social
 social:
-  weibo: u/5363483706?refer_flag=1005055010_
+  # weibo: u/5363483706?refer_flag=1005055010_
   github: evanzew
   #   twitter: onevcat
   #   gplus: 107108267983477358170

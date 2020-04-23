@@ -65,7 +65,7 @@ React 会比较两个 `<li>first</li>` 树与两个 `<li>second</li>` 树，然�
 </ul>
 ```
 
-React 将会改变每一个子节点而没有意识到需要保留 <li>Duke</li> 和 <li>Villanova</li> 两个子树。这种低效是一个问题。
+React 将会改变每一个子节点而没有意识到需要保留 `<li>Duke</li>` 和 `<li>Villanova</li>` 两个子树。这种低效是一个问题。
 
 ##### 1.5 Keys
 
