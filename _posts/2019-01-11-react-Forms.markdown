@@ -2,6 +2,7 @@
 layout: post
 title: React 表单（Forms）详解
 date: 2019-01-11 14:36:24.000000000 +09:00
+tags: React
 ---
 
 如果希望 React 的表单和 HML 表单的默认行为不一致，需要使用到一种称为“受控组件(Controlled Components)”的技术。

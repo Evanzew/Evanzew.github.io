@@ -2,6 +2,7 @@
 layout: post
 title: JS this的用法
 date: 2020-03-16 16:07:24.000000000 +09:00
+tags: JS
 ---
 
 **关键词**：JavaScript  this

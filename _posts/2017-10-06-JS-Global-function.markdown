@@ -2,6 +2,7 @@
 layout: post
 title: JS 11个全局函数
 date: 2017-10-06 14:36:24.000000000 +09:00
+tags: JS
 ---
 
 **关键词**：全局函数 JavaScript

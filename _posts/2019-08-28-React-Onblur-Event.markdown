@@ -2,6 +2,7 @@
 layout: post
 title: React的onMouseDown，onBlur和onClick执行顺序问题
 date: 2019-08-28 16:07:24.000000000 +09:00
+tags: React
 ---
 
 最近在项目中遇到了一个因为onBlur和onClick执行顺序不同而造成的bug，希望同大家分享一下。

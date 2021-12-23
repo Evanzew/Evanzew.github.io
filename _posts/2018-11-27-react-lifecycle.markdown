@@ -2,6 +2,7 @@
 layout: post
 title: React Lifecycle(生命周期)
 date: 2018-11-27 11:27:24.000000000 +09:00
+tags: React
 ---
 
 按照我的理解，生命周期主要分为一下几个**步骤**：

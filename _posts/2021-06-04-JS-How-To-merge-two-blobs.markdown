@@ -1,7 +1,8 @@
 ---
 layout: post
 title: JS 如何将被切割的Blob文件合并下载
-date: 2020-06-04 16:07:24.000000000 +09:00
+date: 2021-06-04 16:07:24.000000000 +09:00
+tags: Angualr13
 ---
 
 **关键词**：JavaScript  Blob

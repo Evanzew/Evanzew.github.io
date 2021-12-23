@@ -2,6 +2,7 @@
 layout: post
 title: React Reconciliation(调和)
 date: 2018-11-26 11:27:24.000000000 +09:00
+tags: React
 ---
 
 #### 动机

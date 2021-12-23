@@ -2,6 +2,7 @@
 layout: post
 title: Angular 11 MSAL B2C登录实例(一) 
 date: 2021-03-15 16:07:24.000000000 +09:00
+tags: Auglar11
 ---
 
 **关键词** Angular 11 B2C MSAL

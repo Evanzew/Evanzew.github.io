@@ -2,6 +2,7 @@
 layout: post
 title: JS !!两个感叹号的作用
 date: 2020-10-08 16:07:24.000000000 +09:00
+tags: JS
 ---
 
 **关键词**：JavaScript !!
