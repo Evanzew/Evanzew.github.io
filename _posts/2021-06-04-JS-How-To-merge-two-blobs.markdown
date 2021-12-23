@@ -1,11 +1,11 @@
 ---
 layout: post
-title: JS 如何将被切割的Blob文件合并下载
+title: Angualr13 如何将被切割的Blob文件合并下载
 date: 2021-06-04 16:07:24.000000000 +09:00
-tags: Angualr13
+tags: JS Angualr13
 ---
 
-**关键词**：JavaScript  Blob
+**关键词**：Angualr13 JavaScript  Blob
 
 ### 前言
 在项目的实际过程中，需要下载一个大于10MB的文件, Apigee会直接拒绝此次下载。所以后端需要将大于10MB的文件切割成一个个小于8MB的文件，此时前端需要将切割的文件合并成一个文件后再进行下载。
