@@ -1,0 +1,24 @@
+---
+layout: post
+title: JS !!两个感叹号的作用
+date: 2020-10-08 16:07:24.000000000 +09:00
+---
+
+**关键词**：JavaScript !!
+
+### 具体场景
+先来看如下代码, 对字符串test进行判断：
+{% highlight ruby %}
+if(test!=null&&test!=undefined&&test!=''){
+    console.log('test为非空')
+}
+{% endhighlight %}
+
+实际上只需要写
+
+{% highlight ruby %}
+if(!!(test.trim())){
+    document.write('test为非空')
+{% endhighlight %}
+
+ !!(test)的作用是将test强制转换为布尔型（boolean）再进行判断或者比较。
