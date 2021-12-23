@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular 8如何更改子组件样式
+title: Angular8 如何更改子组件样式
 date: 2020-12-12 16:07:24.000000000 +09:00
 tags: Auglar8
 ---
