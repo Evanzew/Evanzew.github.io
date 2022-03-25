@@ -29,7 +29,6 @@ tags: Angualr13
             },
 }
 {% endhighlight %}
-
 2. 在angular.json的serve的configuration中添加development对象
 {% highlight ruby %}
  "configurations": {
@@ -39,7 +38,6 @@ tags: Angualr13
             }
 }
 {% endhighlight %}
-
 3. 修改package.json的scripts下的dev命令
 {% highlight ruby %}
 "dev": "...ng build --configuration=development && ng serve --configuration development "

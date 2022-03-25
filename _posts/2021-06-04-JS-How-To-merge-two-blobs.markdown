@@ -18,7 +18,6 @@ tags: JS Angualr13
 ### 解决方案：
 
 - 1. 用递归去解决循环的问题。（具体实现参考下述完整代码）
-
 - 2. 有两种方式去将Blob拼接
   - 1.  将Blob片段push到一个数组里
 {% highlight ruby %}

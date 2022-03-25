@@ -20,14 +20,12 @@ setCurrentId(id: number = null) {
   this.idSubject.next(id);
 }
 {% endhighlight %}
-
 2. 在需要传值的地方call setCurrentId
 {% highlight ruby %}
 
 this.service.setCurrentId(xx) // xx代表要传入的id
 
 {% endhighlight %}
-
 3. 在需要调用id的地方添加如下代码
 {% highlight ruby %}
 
