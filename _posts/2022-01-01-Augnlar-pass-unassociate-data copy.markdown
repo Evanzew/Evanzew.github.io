@@ -11,7 +11,7 @@ tags: Angualr2+
 众所周知，angular2+向子组件传递数据用@Input(), 子组件向父组件传递数据用@Output()。现在因为项目需求，需要在angular2+的不关联组建中传递数据，本文详细介绍了具体步骤和代码。
 
 ### 步骤
-1. 在service文件添加如下代码
+1.在service文件添加如下代码
 {% highlight ruby %}
 private idSubject: BehaviorSubject<number> = new BehaviorSubject<number>(null);
 public id = this.idSubject.asObservable();
@@ -20,13 +20,13 @@ setCurrentId(id: number = null) {
   this.idSubject.next(id);
 }
 {% endhighlight %}
-2. 在需要传值的地方call setCurrentId
+2.在需要传值的地方call setCurrentId
 {% highlight ruby %}
 
 this.service.setCurrentId(xx) // xx代表要传入的id
 
 {% endhighlight %}
-3. 在需要调用id的地方添加如下代码
+3.在需要调用id的地方添加如下代码
 {% highlight ruby %}
 
 private ngUnsubscribe = new Subject<void>();

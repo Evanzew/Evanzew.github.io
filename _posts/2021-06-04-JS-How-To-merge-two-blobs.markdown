@@ -17,9 +17,9 @@ tags: JS Angualr13
 
 ### 解决方案：
 
-- 1. 用递归去解决循环的问题。（具体实现参考下述完整代码）
-- 2. 有两种方式去将Blob拼接
-  - 1.  将Blob片段push到一个数组里
+- 1.用递归去解决循环的问题。（具体实现参考下述完整代码）
+- 2.有两种方式去将Blob拼接
+  - 1.将Blob片段push到一个数组里
 {% highlight ruby %}
     const chunckNumber = !fileSize ? 1 : Math.ceil(fileSize / (8 * 1024 *1024));
     let fileData = [];
@@ -47,8 +47,7 @@ tags: JS Angualr13
     };
     getFileContent(0);
 {% endhighlight %}
-
-  - 2.将Blob片段转化为2进制然后合并到一个数组里
+- 2.将Blob片段转化为2进制然后合并到一个数组里
 {% highlight ruby %}
     const chunckNumber = !fileSize ? 1 : Math.ceil(fileSize / (8 * 1024 *1024))
     let fileData = new Uint8Array([]);
