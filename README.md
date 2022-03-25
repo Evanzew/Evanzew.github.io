@@ -13,7 +13,7 @@ $ bundler exec jekyll serve
 ```
 
 ## Live Demo
-You can find my blogs on [Evan Blog](Evanzew.github.io)
+You can find my blogs on [Evan Blog](https://evanzew.github.io/)
 
 ![Demo picture](/assets/images/Demo.jpg 'Demo preview')
 ![Blog picture](/assets/images/Blog.jpg 'Blog preview')
