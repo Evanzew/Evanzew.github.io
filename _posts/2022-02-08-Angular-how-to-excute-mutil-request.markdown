@@ -15,7 +15,7 @@ tags: Angular2+
 {% highlight ruby %}
 let requestList = [];
 {% endhighlight %}
-2. 用mergeMap方法进行内嵌操作，并push到新建的数组中
+2.用mergeMap方法进行内嵌操作，并push到新建的数组中
 {% highlight ruby %}
  requestList.push(
     this.sevice.createDemo(this.id, demo)
