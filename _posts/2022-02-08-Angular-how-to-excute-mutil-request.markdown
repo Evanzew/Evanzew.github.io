@@ -2,10 +2,10 @@
 layout: post
 title: 如何在Angular里执行多个内嵌请求
 date: 2022-02-08 16:07:24.000000000 +09:00
-tags: Angular2+
+tags: Angular 2+
 ---
 
-**关键词** Angular2+
+**关键词** Angular 2+
 
 ### 前言
 在项目过程中，在发送WS请求的时候，需要多个内嵌请求都结束后，再进行后续操作，除了promise以外，本文介绍了另外一种方法。

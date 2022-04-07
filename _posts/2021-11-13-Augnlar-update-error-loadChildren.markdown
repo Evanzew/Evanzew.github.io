@@ -2,7 +2,7 @@
 layout: post
 title: Angular11升级到13报错：loadChildren error 
 date: 2021-11-13 16:07:24.000000000 +09:00
-tags: Angualr13
+tags: Angular13
 ---
 
 **关键词** Angular 11 update loadChildren

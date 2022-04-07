@@ -2,7 +2,7 @@
 layout: post
 title: Angular8 如何更改子组件样式
 date: 2020-12-12 16:07:24.000000000 +09:00
-tags: Auglar8
+tags: Angular 2+
 ---
 
 **关键词** Angular 8  style

@@ -2,7 +2,7 @@
 layout: post
 title: Angular11 MSAL B2C登录实例(一) 
 date: 2021-03-15 16:07:24.000000000 +09:00
-tags: Auglar11
+tags: Angular 2+
 ---
 
 **关键词** Angular 11 B2C MSAL
@@ -15,7 +15,7 @@ tags: Auglar11
 在项目中安装msal
 `npm i @azure/msal-angular --save`
 `npm i @azure/msal-browser --save`
-通过查阅MSAL的文档，发现v2以上版本才支持Angualr11，所以在本项目的代码中使用的是:
+通过查阅MSAL的文档，发现v2以上版本才支持Angular11，所以在本项目的代码中使用的是:
 `"@azure/msal-angular": "^2.0.3", ` 
 ` "@azure/msal-browser": "^2.17.0",`
 

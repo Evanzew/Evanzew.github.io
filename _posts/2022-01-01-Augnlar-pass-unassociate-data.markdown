@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular2+ 如何向不关联组件传入数据
+title: Angular 2+ 如何向不关联组件传入数据
 date: 2022-01-01 16:07:24.000000000 +09:00
-tags: Angualr2+
+tags: Angular 2+
 ---
 
-**关键词** Angualr2+
+**关键词** Angular 2+
 
 ### 前言
-众所周知，angular2+向子组件传递数据用@Input(), 子组件向父组件传递数据用@Output()。现在因为项目需求，需要在angular2+的不关联组建中传递数据，本文详细介绍了具体步骤和代码。
+众所周知，angular 2+向子组件传递数据用@Input(), 子组件向父组件传递数据用@Output()。现在因为项目需求，需要在angular 2+的不关联组建中传递数据，本文详细介绍了具体步骤和代码。
 
 ### 步骤
 1.在service文件添加如下代码
