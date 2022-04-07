@@ -2,7 +2,7 @@
 layout: post
 title: Angular13 如何修改项目baseUrl
 date: 2021-12-01 16:07:24.000000000 +09:00
-tags: Angular 2+
+tags: Angular2+
 ---
 
 **关键词** Angular13

@@ -2,7 +2,7 @@
 layout: post
 title: Angular13 如何将被切割的Blob文件合并下载
 date: 2021-06-04 16:07:24.000000000 +09:00
-tags: JS Angular 2+
+tags: JS Angular2+
 ---
 
 **关键词**：Angular13 JavaScript  Blob

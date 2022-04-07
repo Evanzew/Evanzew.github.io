@@ -2,7 +2,7 @@
 layout: post
 title: Angular11升级到13报错：Angular Forms error Two incompatible decorators on class
 date: 2021-11-11 16:07:24.000000000 +09:00
-tags: Angular 2+
+tags: Angular2+
 ---
 
 **关键词** Angular 11 update

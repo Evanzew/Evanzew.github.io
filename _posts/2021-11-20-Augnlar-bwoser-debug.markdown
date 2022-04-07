@@ -2,7 +2,7 @@
 layout: post
 title: Angular13 无法在浏览器debug
 date: 2021-11-14 16:07:24.000000000 +09:00
-tags: Angular 2+
+tags: Angular2+
 ---
 
 **关键词** Angular13 npm install
