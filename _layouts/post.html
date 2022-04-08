@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
     <div class="post-meta">
       <!--<time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time> &#8226; <span class="post-meta__tags tags">{{page.tags}}</span>-->
-      <a href="/dates/#{{page.date | date: '%Y'}}"><time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time></a> &#8226; <a href="/categories/#{{page.categories}}" class="post-meta__tags tags">{{page.categories | join:' ' }}</a><a href="/tags/#{{page.tags}}" class="post-meta__tags tags">{{page.tags | join:' '}}</a> &#8226; View <span id="busuanzi_value_page_pv"></span> times.
+      <a href="/dates/#{{page.date | date: '%Y'}}"><time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time></a><a href="/tags/#{{page.tags}}" class="post-meta__tags tags">{{page.tags | join:' '}}</a> &#8226; View <span id="busuanzi_value_page_pv"></span> times.
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
