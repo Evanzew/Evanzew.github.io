@@ -8,7 +8,7 @@ layout: default
       <!--<time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time> &#8226; <span class="post-meta__tags tags">{{page.tags}}</span>-->
       <a href="/dates/#{{page.date | date: '%Y'}}"><time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time></a> &#8226;
       {% for tag in page.tags%}
-      <a href="/tags/#{{tag}}" class="post-meta__tags tags">{{tag}}</a> &#8226;
+      <a href="/tags/#{{tag}}" class="post-meta__tags tags">{{tag}}</a>
       {% endfor %}
       View <span id="busuanzi_value_page_pv"></span> times.
     </div>
