@@ -34,7 +34,7 @@ layout: default
           {%- assign posts = tag[1] -%}
           {%- if posts.size == i -%}
             <li>
-              {%- capture link -%}{{ page.permalink }}#{{ slugified_tag_name }}{%- endcapture -%}
+              {%- capture link -%}{{ page.permalink }}#{{ tag_name }}{%- endcapture -%}
               <a class="tag" href="{{ link | relative_url }}">
                 <span>
                   {{ tag_name }}
@@ -55,15 +55,10 @@ layout: default
     {%- if tag[0] contains ',' -%}
     {%- else -%}
       {%- assign tag_name = tag[0] -%}
-      {%- assign slugified_tag_name = tag_name | slugify -%}
       {%- assign posts = tag[1] -%}
       {%- if posts.size == i -%}
-        <h2 id="{{ slugified_tag_name }}">
-          {%- if page.type == 'tags' -%}
-            {{ slugified_tag_name }}
-          {%- else -%}
+        <h2 id="{{ tag_name }}">
             {{ tag_name }}
-          {%- endif -%}
         </h2>
         <ul class="post-list-by-tag">
           {%- for post in posts -%}
