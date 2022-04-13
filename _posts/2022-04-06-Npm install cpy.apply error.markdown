@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Npm install报cpy.apply error
+title: Npm install报cb.apply is not a function错误
 date: 2022-04-06 16:07:24.000000000 +09:00
 tags: Node Npm
 ---
@@ -8,7 +8,7 @@ tags: Node Npm
 **关键词** Node Npm
 
 ### 前言
-在项目npm install的时候，报出了cpy.apply的错误，本文介绍了解决这个问题的办法
+在项目npm install的时候，报出了cb.apply is not a function的错误，本文介绍了解决这个问题的办法
 
 ### 步骤
 1. 访问 C:\Users(your username)\AppData\Roaming
