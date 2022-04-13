@@ -4,7 +4,6 @@ layout: default
 
 <div class="main-post-list hidden">
   {% include menu-header.html %}
-  {% include pagination.html %}
 
   <ol class="post-list">
     {% for post in paginator.posts %}
@@ -33,5 +32,6 @@ layout: default
     </li>
     {% endfor %}
   </ol>
-
+  
+  {% include pagination.html %}
 </div>
