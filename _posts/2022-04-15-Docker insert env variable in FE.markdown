@@ -21,6 +21,7 @@ cat /etc/nginx/nginx.conf
 nginx -g "daemon off;"
 {% endhighlight %}
 > 注: `#!/usr/bin/env sh` 并不是注释的意思，而是选择编译语言的意思。建议使用sh，因为bash可能不是每台服务器都安装的。
+
 > 注： 为什么要加nginx -g "daemon off";因为要让容器能持续运行， 必须要有前台进程，这里要将nginx转为前台进程。
 
 #### 2. 在DockerFile里复制`start.sh`，将其从容器外复制到容器内:
