@@ -14,7 +14,7 @@ tags: Docker
 在生成前端容器的阶段，可以使用同一个镜像，根据不同的环境传入参数形成不同的前端容器。下面会分享一个容器执行阶段动态插入并使用变量的实例。
 
 ### 步骤 
-1. 在根目录创建`start.sh`文件，文件内容如下:
+#### 1. 在根目录创建`start.sh`文件，文件内容如下:
 {% highlight ruby %}
 #!/usr/bin/env sh
 cat /etc/nginx/nginx.conf
@@ -23,13 +23,13 @@ nginx -g "daemon off;"
 > 注: `#!/usr/bin/env sh` 并不是注释的意思，而是选择编译语言的意思。建议使用sh，因为bash可能不是每台服务器都安装的。
 > 注： 为什么要加nginx -g "daemon off";因为要让容器能持续运行， 必须要有前台进程，这里要将nginx转为前台进程。
 
-2. 在DockerFile里复制`start.sh`，将其从容器外复制到容器内:
+#### 2. 在DockerFile里复制`start.sh`，将其从容器外复制到容器内:
 {% highlight ruby %}
 ...
 COPY start.sh /app/start.sh
 {% endhighlight %}
 
-3. 在根目录创建`nginx.conf.template`文件，首先从`nginx.conf`复制代码，再在文件的server下添加`ENV_VARS`占位符，代码如下:
+#### 3. 在根目录创建`nginx.conf.template`文件，首先从`nginx.conf`复制代码，再在文件的server下添加`ENV_VARS`占位符，代码如下:
 {% highlight ruby %}
 ...
 http {
@@ -44,7 +44,7 @@ http {
 }
 {% endhighlight %}
 
-4. 在项目`server`端创建一个获取变量的方法, 代码如下：
+#### 4. 在项目`server`端创建一个获取变量的方法, 代码如下：
 {% highlight ruby %}
 type Env = {
   logoutUrl?: string;
@@ -55,7 +55,7 @@ export async function getEnvironmentVariables() {
 }
 {% endhighlight %}
 
-5. 在项目代码里添加使用变量的方法，代码如下：
+#### 5. 在项目代码里添加使用变量的方法，代码如下：
 {% highlight ruby %}
 const logout = () => {
     getEnvironmentVariables()
@@ -71,7 +71,7 @@ const logout = () => {
   };
 {% endhighlight %}
 
-6. 正常构建镜像之后, 在生成容器时，可通过环境变量传参替换原前端`nginx.conf.template`文件里的`ENV_VARS`字符串
+#### 6. 正常构建镜像之后, 在生成容器时，可通过环境变量传参替换原前端`nginx.conf.template`文件里的`ENV_VARS`字符串
 {% highlight ruby %}
 docker run -e ENV_VARS='{"logoutUrl": "xxxxxx"}' --name test -p 81:8000 -itd swr.test:v0.0.31
 
