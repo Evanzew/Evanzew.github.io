@@ -2,10 +2,10 @@
 layout: post
 title: 如何在h5和小程序中适配iphoneX及更高版本全面屏底部的安全区
 date: 2022-09-01 09:59:24.000000000 +09:00
-tags: React AntDesign 
+tags: Css IOS
 ---
 
-**关键词** IOS 
+**关键词** Css IOS 
 
 ### 前言
 在项目开发的过程中，需要IOS全面屏底部安全区适配
