@@ -84,7 +84,7 @@ const MyForm = () => {
             message: "Url is invalid!"
           }
         }}
-        {% raw %}
+        {% endraw %}
       />
       <Button
         type="submit"
