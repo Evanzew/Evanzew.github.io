@@ -11,17 +11,17 @@ tags:  React MUI react-hook-form-mui
 在上一篇文章中，我们介绍了`react-hook-form-mui`的基础用法。本文将着重讲解表单验证功能。
 `react-hook-form-mui`提供了丰富的表单验证功能，可以通过`validation`属性来设置表单验证规则。本文将详细介绍`validation`的三种实现方法，以及如何与提交按钮联动。
 
-###Demo
+### Demo
 以下是一个表单验证的 demo，我们将通过三种方法来实现表单验证：
 
 {% highlight ruby %}
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { Button } from '@mui/material';
-import { FormContainer, TextFieldElement } from 'react-hook-form-mui';
+import React from "react";
+import { useForm } from "react-hook-form";
+import { Button } from "@mui/material";
+import { FormContainer, TextFieldElement } from "react-hook-form-mui";
 
 const URL_REGEXP =
-  /^[A-Za-z][A-Za-z\d.+-]*:\/*(?:\w+(?::\w+)?@)?[^\s/]+(?::\d+)?(?:\/[\w#!:.,?+=&%@\-/]*)?$/;
+  \/^[A-Za-z][A-Za-z\d.+-]*:\/*(?:\w+(?::\w+)?@)?[^\s/]+(?::\d+)?(?:\/[\w#!:.,?+=&%@\-/]*)?$\/;
 
 export interface UserSettings {
   firstName: string;
@@ -34,17 +34,17 @@ export interface UserSettings {
  * @param _value 当前表单元素的值
  */
 const validateLastNameLength = (_value: string) => {
-  return _value.length < 2 ? 'Url is invalid!' as any : Promise.resolve();
+  return _value.length < 2 ? "Url is invalid!" as any : Promise.resolve();
 };
 
 const MyForm = () => {
   const formContext = useForm<UserSettings>({
     defaultValues: {
-      firstName: '',
-      lastName: '',
-      url: ''
+      firstName: "",
+      lastName: "",
+      url: ""
     },
-    mode: 'all' // 验证模式切换为all
+    mode: "all" // 验证模式切换为all
   });
 
   const onSubmit = (data: UserSettings) => {
@@ -63,7 +63,7 @@ const MyForm = () => {
         name="firstName"
         label="First Name"
         validation={{
-          required: 'First Name is required!'
+          required: "First Name is required!"
         }}
       />
 
@@ -80,7 +80,7 @@ const MyForm = () => {
         validation={{
           pattern: {
             value: URL_REGEXP,
-            message: 'Url is invalid!'
+            message: "Url is invalid!"
           }
         }}
       />
@@ -108,11 +108,11 @@ export default MyForm;
 
 {% highlight ruby %}
 ValidationMode = {
-    onBlur: 'onBlur';
-    onChange: 'onChange';
-    onSubmit: 'onSubmit';
-    onTouched: 'onTouched';
-    all: 'all';
+    onBlur: "onBlur";
+    onChange: "onChange";
+    onSubmit: "onSubmit";
+    onTouched: "onTouched";
+    all: "all";
 }
 {% endhighlight %}
 根据项目需求，开发者可自行选择触发方式，本例中使用的是`all`，即需要匹配所有触发方式。
@@ -123,7 +123,7 @@ ValidationMode = {
 
 {% highlight ruby %}
 validation={{
-    required: 'First Name is required!'
+    required: "First Name is required!"
  }}
 {% endhighlight %}
 2. 通过正则匹配来验证表单元素
@@ -132,7 +132,7 @@ validation={{
 validation={{
     pattern: {
         value: URL_REGEXP,
-        message: 'Url is invalid!'
+        message: "Url is invalid!"
       }
  }}
 {% endhighlight %}
