@@ -122,14 +122,7 @@ validation={{
 {% endhighlight %}
 2. 通过正则匹配来验证表单元素
 
-{% highlight ruby %}
-validation={{
-    pattern: {
-        value: URL_REGEXP,
-        message: "Url is invalid!"
-      }
- }}
-{% endhighlight %}
+
 3. 通过自定义的验证规则来验证表单元素：
 
 {% highlight ruby %}
