@@ -82,7 +82,7 @@ const MyForm = () => {
             <!-- value: URL_REGEXP, -->
             <!-- message: "Url is invalid!" -->
           }
-        }}
+         /\}\}
       />
       <Button
         type="submit"
