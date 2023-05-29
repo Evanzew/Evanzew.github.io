@@ -77,10 +77,6 @@ const MyForm = () => {
       <TextFieldElement
         name="url"
         label="Url"
-        validation={{
-          pattern: {
-          }
-        }}
       />
       <Button
         type="submit"
