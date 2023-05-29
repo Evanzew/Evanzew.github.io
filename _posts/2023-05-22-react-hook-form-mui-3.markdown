@@ -77,14 +77,12 @@ const MyForm = () => {
       <TextFieldElement
         name="url"
         label="Url"
-        {% raw %}
         validation={{
           pattern: {
-            value: URL_REGEXP,
-            message: "Url is invalid!"
+            <!-- value: URL_REGEXP, -->
+            <!-- message: "Url is invalid!" -->
           }
         }}
-        {% endraw %}
       />
       <Button
         type="submit"
