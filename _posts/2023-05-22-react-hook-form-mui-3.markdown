@@ -96,7 +96,7 @@ const MyForm = () => {
 export default MyForm;
 {% endhighlight %}
 
->验证触发模式 `mode`
+> 验证触发模式 `mode`
 
 首先，我们需要在formContext中规定`mode`属性，这个属性用来确定form何时触发验证规则。mode提供了以下5中触发方式:
 
