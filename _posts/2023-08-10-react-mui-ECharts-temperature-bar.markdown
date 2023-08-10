@@ -17,7 +17,7 @@ tags:  React Echarts MUI
 
 ### 关键代码
 
-```
+{% highlight ruby %}
 import React from 'react';
 import * as echarts from 'echarts/core';
 import { EChartOption } from '../../EChartOption';
@@ -261,7 +261,7 @@ export default function TemperatureBar() {
         justifyContent: 'center',
         position: 'relative',
         color: '#fff'
-      }}
+      \}\}
     >
       {isMinHieght ?
         <Box
@@ -269,14 +269,14 @@ export default function TemperatureBar() {
             display: 'flex',
             flexDirection: 'column',
             textAlign: 'left'
-          }}
+          \}\}
         >
           <Box
             sx={{
               display: 'flex',
               alignItems: 'center',
               mb: 2
-            }}
+            \}\}
           >
             <Box
               sx={{
@@ -286,12 +286,12 @@ export default function TemperatureBar() {
                 width: 0,
                 height: 0,
                 display: 'inline-block'
-              }}
+              \}\}
             ></Box>
             <span
               style={{
                 paddingLeft: '4px'
-              }}
+              \}\}
             >
              最高温度
               {parseFloat(String(maxTemperature)).toFixed(1)}℃
@@ -301,7 +301,7 @@ export default function TemperatureBar() {
             sx={{
               display: 'flex',
               alignItems: 'center'
-            }}
+            \}\}
           >
             <Box
               sx={{
@@ -311,12 +311,12 @@ export default function TemperatureBar() {
                 width: 0,
                 height: 0,
                 display: 'inline-block'
-              }}
+              \}\}
             ></Box>
             <span
               style={{
                 paddingLeft: '4px'
-              }}
+              \}\}
             >
              最低温度
               {parseFloat(String(minTemperature)).toFixed(1)}℃
@@ -332,7 +332,7 @@ export default function TemperatureBar() {
             borderRadius: '8px',
             position: 'relative',
             boxShadow: '2px 2px 8px 0px rgba(0, 0, 0, 0.7)'
-          }}
+          \}\}
         >
           <Box
             sx={{
@@ -342,14 +342,14 @@ export default function TemperatureBar() {
               display: 'flex',
               alignItems: 'center',
               fontSize: '12px'
-            }}
+            \}\}
           >
             <Box
               sx={{
                 marginRight: '10px',
                 display: 'flex',
                 alignItems: 'center'
-              }}
+              \}\}
             >
               <Box
                 sx={{
@@ -359,12 +359,12 @@ export default function TemperatureBar() {
                   width: 0,
                   height: 0,
                   display: 'inline-block'
-                }}
+                \}\}
               ></Box>
               <span
                 style={{
                   paddingLeft: '4px'
-                }}
+                \}\}
               >
                 最高
               </span>
@@ -373,7 +373,7 @@ export default function TemperatureBar() {
               sx={{
                 display: 'flex',
                 alignItems: 'center'
-              }}
+              \}\}
             >
               <Box
                 sx={{
@@ -383,12 +383,12 @@ export default function TemperatureBar() {
                   width: 0,
                   height: 0,
                   display: 'inline-block'
-                }}
+                \}\}
               ></Box>
               <span
                 style={{
                   paddingLeft: '4px'
-                }}
+                \}\}
               >
                 最小
               </span>
@@ -404,7 +404,7 @@ export default function TemperatureBar() {
                 MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE
               })`,
               transition: 'top 0.3s ease'
-            }}
+            \}\}
           >
             <hr
               style={{
@@ -413,7 +413,7 @@ export default function TemperatureBar() {
                 color: '#FF4D4F',
                 border: 'none',
                 borderTop:  '1px solid #FF4D4F' 
-              }}
+              \}\}
             />
             <Box
               sx={{
@@ -428,7 +428,7 @@ export default function TemperatureBar() {
                 display: 'flex',
                 justifyContent: 'center',
                 paddingBottom: '18px'
-              }}
+              \}\}
             >
               {parseFloat(String(maxTemperature)).toFixed(1)}
             </Box>
@@ -443,7 +443,7 @@ export default function TemperatureBar() {
                 MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE
               })`,
               transition: 'top 0.3s ease'
-            }}
+            \}\}
           >
             <hr
               style={{
@@ -451,7 +451,7 @@ export default function TemperatureBar() {
                 margin: 0,
                 border: 'none',
                 borderTop:  '1px solid #5087EC' 
-              }}
+              \}\}
             />
             <Box
               sx={{
@@ -466,7 +466,7 @@ export default function TemperatureBar() {
                 display: 'flex',
                 justifyContent: 'center',
                 paddingTop: '3px'
-              }}
+              \}\}
             >
               {parseFloat(String(minTemperature)).toFixed(1)}
             </Box>
@@ -478,7 +478,7 @@ export default function TemperatureBar() {
   );
 }
 
-```
+{% endhighlight %}
 
 ### 后言
  在本文中，我们使用`React 18`、`Echarts`和`MUI`库展示了如何实现一个交互性的温度计。我们通过创建一个温度计组件，并使用`Echarts`库绘制温度计的外观。使用`MUI`库，我们创建了一个漂亮的用户界面来容纳温度计。如果不使用`MUI`，只需要把`MUI`相关标签改成`HTML`标签即可
