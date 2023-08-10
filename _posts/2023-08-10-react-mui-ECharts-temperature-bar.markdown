@@ -397,16 +397,6 @@ export default function TemperatureBar() {
           <Box
             sx={{
               position: 'absolute',
-              left: '50%',
-              top: '10px'
-            }}
-          >
-            {/* <span>℃</span> */}
-          </Box>
-
-          <Box
-            sx={{
-              position: 'absolute',
               width: 'calc(50% + 20px)',
               margin: 0,
               left: '50%',
@@ -443,7 +433,6 @@ export default function TemperatureBar() {
               {parseFloat(String(maxTemperature)).toFixed(1)}
             </Box>
           </Box>
-
           <Box
             sx={{
               position: 'absolute',
