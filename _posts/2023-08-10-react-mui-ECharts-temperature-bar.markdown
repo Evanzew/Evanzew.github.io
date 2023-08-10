@@ -17,16 +17,16 @@ tags:  React Echarts MUI
 
 ### 关键代码
 
-{% highlight ruby %}
+{% highlight ruby %\}
 import React from 'react';
 import * as echarts from 'echarts/core';
-import { EChartOption } from '../../EChartOption';
+import { EChartOption \} from '../../EChartOption';
 import CommonChart from '../../CommonChart';
-import { Box } from '@mui/material';
+import { Box \} from '@mui/material';
 
 interface TemperatureBarProps {
   deviceData: any;
-}
+\}
 
 const MAX_TEMPERATURE_SOCPE = 120; //温度上限
 const MIN_TEMPERATURE_SOCPE = -40; // 温度下限
@@ -50,14 +50,14 @@ const TemperatureChart = () => {
   ) {
     if (i % 20 === 10) {
       kd.push('');
-    } else if (i % 40 === 0) {
+    \} else if (i % 40 === 0) {
       kd.push('-48');
-    } else if (i % 8 === 0) {
+    \} else if (i % 8 === 0) {
       kd.push('-28');
-    } else {
+    \} else {
       kd.push('');
-    }
-  }
+    \}
+  \}
 
   // 根据温度数值设置渐变色和文本内容
   if (TPvalue > 20) {
@@ -65,33 +65,33 @@ const TemperatureChart = () => {
       {
         offset: 0,
         color: '#93FE94'
-      },
+      \},
       {
         offset: 0.5,
         color: '#E4D225'
-      },
+      \},
       {
         offset: 1,
         color: '#E01F28'
-      }
+      \}
     );
-  } else if (TPvalue > -20) {
+  \} else if (TPvalue > -20) {
     Gradient.push(
       {
         offset: 0,
         color: '#93FE94'
-      },
+      \},
       {
         offset: 1,
         color: '#E4D225'
-      }
+      \}
     );
-  } else {
+  \} else {
     Gradient.push({
       offset: 1,
       color: '#93FE94'
-    });
-  }
+    \});
+  \}
 
   // 温度图表配置选项
   const option = {
@@ -106,13 +106,13 @@ const TemperatureChart = () => {
         fontWeight: 'normal',
         fontSize: '16px',
         padding: 5
-      }
-    },
+      \}
+    \},
     grid: {
       left: '45', // 图表距离容器左边的距离
       bottom: 20, // 图表距离容器底部的距离
       top: 30 // 图表距离容器顶部的距离
-    },
+    \},
     yAxis: [
       {
         show: false, // 不显示y轴
@@ -121,13 +121,13 @@ const TemperatureChart = () => {
         max: MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE + 10, // y轴的最大值
         axisLine: {
           show: false // 不显示y轴的轴线
-        }
-      },
+        \}
+      \},
       {
         show: false, // 不显示y轴
         min: 0, // y轴的最小值
         max: MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE // y轴的最大值
-      },
+      \},
       {
         type: 'category', // 类型为分类
         position: 'left', // y轴的位置在左边
@@ -135,14 +135,14 @@ const TemperatureChart = () => {
         axisLabel: {
           fontSize: 10, // y轴标签的字体大小
           color: 'white' // y轴标签的颜色为白色
-        },
+        \},
         axisLine: {
           show: false // 不显示y轴的轴线
-        },
+        \},
         axisTick: {
           show: false // 不显示y轴的刻度线
-        }
-      }
+        \}
+      \}
     ],
     xAxis: [
       {
@@ -150,12 +150,12 @@ const TemperatureChart = () => {
         min: -50, // x轴的最小值
         max: 80, // x轴的最大值
         data: [] // x轴的数据
-      },
+      \},
       {
         show: false, // 不显示x轴
         min: -48, // x轴的最小值
         max: 120 // x轴的最大值
-      }
+      \}
     ],
     series: [
       {
@@ -166,34 +166,34 @@ const TemperatureChart = () => {
         barWidth: 18, // 柱状图的宽度,
         label: {
           show: true // 显示标签
-        },
+        \},
         itemStyle: {
           color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
             {
               offset: 0.05,
               color: '#5087EC' // 渐变颜色的起始色
-            },
+            \},
             {
               offset: 0.5,
               color: '#58DBA4' // 渐变颜色的起始色
-            },
+            \},
             {
               offset: 0.6,
               color: '#FFF81D' // 渐变颜色的中间色
-            },
+            \},
             {
               offset: 0.8,
               color: '#FA9917' // 渐变颜色的中间色
-            },
+            \},
             {
               offset: 1,
               color: '#FF4D4F' // 渐变颜色的结束色
-            }
+            \}
           ]),
           borderRadius: [8, 8, 2, 2] // 柱状图的圆角样式
-        },
+        \},
         z: 2 // 数据系列层叠的顺序值
-      },
+      \},
       {
         name: '圆', // 数据项名称
         type: 'scatter', // 图表类型为散点图
@@ -204,9 +204,9 @@ const TemperatureChart = () => {
         itemStyle: {
           color: '#5087EC', // 散点图的颜色
           opacity: 1 // 散点图的透明度
-        },
+        \},
         z: 2 // 数据系列层叠的顺序值
-      },
+      \},
       {
         name: '刻度', // 数据项名称
         type: 'bar', // 图表类型为柱状图
@@ -224,28 +224,28 @@ const TemperatureChart = () => {
               MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE
             ) {
               return '';
-            }
+            \}
             if (params.dataIndex % 20 === 0) {
               return params.dataIndex + MIN_TEMPERATURE_SOCPE;
-            }
+            \}
             return '';
-          } // 标签的格式化函数
-        },
+          \} // 标签的格式化函数
+        \},
         barGap: '-100%', // 柱状图之间的距离
         data: kd, // 柱状图的数据
         barWidth: 0.5, // 柱状图的宽度
         itemStyle: {
           color: 'white', // 柱状图的颜色为白色
           barBorderRadius: 120 // 柱状图的圆角样式
-        },
+        \},
         z: 0 // 数据系列层叠的顺序值
-      }
+      \}
     ]
-  } as EChartOption;
+  \} as EChartOption;
 
   // 返回渲染图表的组件
-  return <CommonChart option={option} width="100%" height="100%" />;
-};
+  return <CommonChart option={option\} width="100%" height="100%" />;
+\};
 
 export default function TemperatureBar() {
   const [maxTemperature, setMaxTemperature] = React.useState<number>(80); // 定义最大温度的状态值，默认为80
@@ -253,7 +253,7 @@ export default function TemperatureBar() {
 
   return (
     <Box
-      ref={parentRef}
+      ref={parentRef\}
       sx={{
         display: 'flex',
         height: '100%',
@@ -294,7 +294,7 @@ export default function TemperatureBar() {
               \}\}
             >
              最高温度
-              {parseFloat(String(maxTemperature)).toFixed(1)}℃
+              {parseFloat(String(maxTemperature)).toFixed(1)\}℃
             </span>
           </Box>
           <Box
@@ -319,7 +319,7 @@ export default function TemperatureBar() {
               \}\}
             >
              最低温度
-              {parseFloat(String(minTemperature)).toFixed(1)}℃
+              {parseFloat(String(minTemperature)).toFixed(1)\}℃
             </span>
           </Box>
         </Box> :
@@ -400,9 +400,9 @@ export default function TemperatureBar() {
               width: 'calc(50% + 20px)',
               margin: 0,
               left: '50%',
-              top: `calc(42px + (100% - 62px) * (${MAX_TEMPERATURE_SOCPE}  - ${maxTemperature}) / ${
+              top: `calc(42px + (100% - 62px) * (${MAX_TEMPERATURE_SOCPE\}  - ${maxTemperature\}) / ${
                 MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE
-              })`,
+              \})`,
               transition: 'top 0.3s ease'
             \}\}
           >
@@ -430,7 +430,7 @@ export default function TemperatureBar() {
                 paddingBottom: '18px'
               \}\}
             >
-              {parseFloat(String(maxTemperature)).toFixed(1)}
+              {parseFloat(String(maxTemperature)).toFixed(1)\}
             </Box>
           </Box>
           <Box
@@ -439,9 +439,9 @@ export default function TemperatureBar() {
               margin: 0,
               width: 'calc(50% + 20px)',
               left: '50%',
-              top: `calc(42px + (100% - 62px) * (${MAX_TEMPERATURE_SOCPE}  - ${minTemperature}) / ${
+              top: `calc(42px + (100% - 62px) * (${MAX_TEMPERATURE_SOCPE\}  - ${minTemperature\}) / ${
                 MAX_TEMPERATURE_SOCPE - MIN_TEMPERATURE_SOCPE
-              })`,
+              \})`,
               transition: 'top 0.3s ease'
             \}\}
           >
@@ -468,17 +468,17 @@ export default function TemperatureBar() {
                 paddingTop: '3px'
               \}\}
             >
-              {parseFloat(String(minTemperature)).toFixed(1)}
+              {parseFloat(String(minTemperature)).toFixed(1)\}
             </Box>
           </Box>
           <TemperatureChart />
         </Box>
-      }
+      \}
     </Box>
   );
-}
+\}
 
-{% endhighlight %}
+{% endhighlight %\}
 
 ### 后言
  在本文中，我们使用`React 18`、`Echarts`和`MUI`库展示了如何实现一个交互性的温度计。我们通过创建一个温度计组件，并使用`Echarts`库绘制温度计的外观。使用`MUI`库，我们创建了一个漂亮的用户界面来容纳温度计。如果不使用`MUI`，只需要把`MUI`相关标签改成`HTML`标签即可
