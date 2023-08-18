@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: 使用React 18、Echarts和MUI实现温度计
 date: 2023-08-10 09:59:24.000000000 +09:00
@@ -481,4 +481,4 @@ export default function TemperatureBar() {
 {% endhighlight %}
 
 ### 后言
- 在本文中，我们使用`React 18`、`Echarts`和`MUI`库展示了如何实现一个交互性的温度计。我们通过创建一个温度计组件，并使用`Echarts`库绘制温度计的外观。使用`MUI`库，我们创建了一个漂亮的用户界面来容纳温度计。如果不使用`MUI`，只需要把`MUI`相关标签改成`HTML`标签即可
+ 在本文中，我们使用`React 18`、`Echarts`和`MUI`库展示了如何实现一个交互性的温度计。我们通过创建一个温度计组件，并使用`Echarts`库绘制温度计的外观。使用`MUI`库，我们创建了一个漂亮的用户界面来容纳温度计。如果不使用`MUI`，只需要把`MUI`相关标签改成`HTML`标签即可 -->
